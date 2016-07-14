@@ -97,7 +97,7 @@ div.text-post-image {
 
 @media (min-width: 600px) {			/* increases the post-header-image height more on desktop */
 	div.text-post-image {
-		max-height: 400px;
+		max-height: 360px;
 	}
 }
 
