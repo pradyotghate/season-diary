@@ -91,13 +91,13 @@ a:active {
 
 div.text-post-image {
 	padding-top: 7px;
-	max-height: 200px;
+	max-height: 220px;
 	overflow: hidden;
 }
 
 @media (min-width: 900px) {			/* increases the post-header-image height more on desktop */
 	div.text-post-image {
-		max-height: 300px;
+		max-height: 330px;
 	}
 }
 
