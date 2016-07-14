@@ -91,13 +91,13 @@ a:active {
 
 div.text-post-image {
 	padding-top: 7px;
-	max-height: 220px;
+	max-height: 200px;
 	overflow: hidden;
 }
 
-@media (min-width: 900px) {			/* increases the post-header-image height more on desktop */
+@media (min-width: 600px) {			/* increases the post-header-image height more on desktop */
 	div.text-post-image {
-		max-height: 330px;
+		max-height: 400px;
 	}
 }
 
@@ -114,7 +114,7 @@ img.text-post-image {
 	padding-right: 20px;
 }
 
-@media (min-width: 900px) {			/* increases the post-header-image height more on desktop */
+@media (min-width: 600px) {			/* increases the post-header-image height more on desktop */
 	.text-post-text {
 		font-size: 12px;
 	}
