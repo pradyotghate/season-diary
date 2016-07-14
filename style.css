@@ -1,0 +1,352 @@
+/*
+Theme Name: Season Diary
+Theme URI: http://pradyotghate.com
+Author: Pradyot Ghate
+Author URI: http://pradyotghate.com
+Description: A clean, minimal, responsive blog theme. With portfolio style rendering for photo category.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, white
+Text Domain: seasondiary
+*/
+
+@font-face {
+	font-family: SFUI;
+	src: url('font/SF-UI-Text-Regular.otf')
+		format('opentype');
+	font-weight: noraml;
+}
+
+@font-face {
+	font-family: SFUI-light;
+	src: url('font/SF-UI-Text-Light.otf')
+		format('opentype');
+	font-weight: noraml;
+}
+
+@font-face {
+	font-family: SFUI-semibold;
+	src: url('font/SF-UI-Text-Semibold.otf')
+		format('opentype');
+	font-weight: noraml;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background-color: #fbfbfb;
+	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
+	margin: 0px;
+	color: #121621;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: #2888d5;
+	text-decoration: none;
+}
+
+
+/* Text content related styling goes here */
+.text-post-list {
+	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
+	width: 100%;
+	font-size: 11px;
+	margin: auto;
+	padding-top: 39px;
+}
+
+.text-one-post {
+	padding-top: 25px;
+	padding-bottom: 15px;
+	border-bottom-color: #edf1f4;
+	border-bottom-style: solid;
+	border-bottom-width: 1.5px;
+	display: block;
+	letter-spacing: 1.15px;
+}
+
+.text-post-title {
+	font-size: 18px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.text-post-date {
+	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-size: 12px;
+	color: #8092a1;
+	padding-top: 7px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.text-post-image {
+	padding-top: 7px;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+@media (min-width: 900px) {			/* increases the post-header-image height more on desktop */
+	div.text-post-image {
+		max-height: 300px;
+	}
+}
+
+img.text-post-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.text-post-text {
+	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	line-height: 16px;
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+@media (min-width: 900px) {			/* increases the post-header-image height more on desktop */
+	.text-post-text {
+		font-size: 12px;
+	}
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	padding-right: 10px;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	padding-left: 10px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-post-tags {
+	padding-top: 5px;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	margin: 0 auto;
+	text-align: center;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+a[rel=tag] {
+	background-color: #edf1f4;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	border-radius: 3px;
+}
+
+
+
+
+/* Image posts related styling goes here */
+.image-post-list {
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 900px;
+	font-size: 12px;
+	margin: auto;
+	padding-top: 45px;
+}
+
+.row {
+
+}
+
+.main-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+
+/* Post navigation related styling goes here */
+.post-list-nav {
+	padding-top: 10px;
+	font-size: 10px;
+	letter-spacing: 0.5px;
+	margin: 0 auto;
+	text-align: center;
+	color: #8092a1;
+}
+
+.nav-button {
+	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
+	background-color: #edf1f4;
+	font-size: 25px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 3px;
+}
+
+
+/* Footer related styling goes here */
+.footer {
+	font-family: "SFUI-light", "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	background-color: #121621;
+	color: #8092a1;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* header */
+
+.header {
+	background-color: #121621;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #121621;
+}
+
+.header li a {
+	display: block;
+	padding: 10px 20px;
+	font-size: 14px;
+}
+
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 16px;
+	padding: 10px;
+	font-color: #ffffff;
+}
+
+/* menu */
+
+.header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .4s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 20px 10px;
+	position: relative;
+	user-select: none;
+}
+
+.header .menu-icon .navicon {
+	background: #2888d5;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .4s ease-out;
+	width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+	background: #2888d5;
+	content: '';
+	height: 100%;
+	position: absolute;
+	transition: all .4s ease-out;
+	width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+	top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+	top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+	display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+	max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+
+/* For large screens */
+@media (min-width: 600px) {
+	.header .menu-icon {
+		display: none;
+	}
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.header li {
+    	float: left;
+  	}
+}
