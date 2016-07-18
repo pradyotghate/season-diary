@@ -99,7 +99,7 @@ div.text-post-image {
 
 @media (min-width: 600px) {			/* increases the post-header-image height more on desktop */
 	div.text-post-image {
-		max-height: 360px;
+		max-height: 300px;
 	}
 }
 
@@ -225,7 +225,6 @@ a[rel=tag] {
 	padding-bottom: 5px;
 	font-size: 10px;
 }
-
 
 
 
