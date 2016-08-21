@@ -191,7 +191,7 @@ blockquote {
 }
 
 a[rel=tag] {
-	background-color: rgba(83,93,104,1);
+	background-color: rgba(83,93,104,.10);
 	margin-left: 5px;
 	margin-right: 5px;
 	padding-top: 5px;
