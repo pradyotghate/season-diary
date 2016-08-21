@@ -16,7 +16,10 @@
 
 	<body>
 		<div class="header">
-			<a href="<?php echo esc_url( home_url() ); ?>" class="logo"><?php bloginfo('name'); ?></a>
+			<a href="<?php echo home_url(); ?>" class="logo">
+				<?php bloginfo('name'); ?>
+			</a>
+			
 			<input class="menu-btn" type="checkbox" id="menu-btn" />
 			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 			

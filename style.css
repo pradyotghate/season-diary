@@ -9,6 +9,12 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, white
 Text Domain: seasondiary
+
+darkblue: rgba(18,22,33,1);
+blue: rgba(40,136,213,1);
+greyblue: rgba(83,93,104,1);
+white: rgba(239,242,244,1);
+highlightred: rgba(104,7,2,1);
 */
 
 @font-face {
@@ -37,17 +43,23 @@ html {
 }
 
 body {
-	background-color: #fbfbfb;
+	background-color: rgba(239,242,244,1);
 	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
-	margin: 0px;
-	color: #121621;
+	margin: 0;
+	color: rgba(18,22,33,1);
 }
 
 a:link,
 a:visited,
 a:active {
-	color: #2888d5;
+	color: rgba(40,136,213,1);
 	text-decoration: none;
+}
+
+@media only screen and (min-width: 1100px) {						/* Link hovering for desktops */
+	a:link:hover {
+		text-decoration: underline;
+	}
 }
 
 
@@ -55,15 +67,16 @@ a:active {
 .text-post-list {
 	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
 	width: 100%;
-	font-size: 11px;
-	margin: auto;
+	font-size: 12px;
 	padding-top: 39px;
 }
 
 .text-one-post {
-	padding-top: 25px;
+	margin: 0 auto;
+	max-width: 1100px;
+	padding-top: 20px;
 	padding-bottom: 15px;
-	border-bottom-color: #edf1f4;
+	border-bottom-color: rgba(83,93,104,1);
 	border-bottom-style: solid;
 	border-bottom-width: 1.5px;
 	display: block;
@@ -78,10 +91,17 @@ a:active {
 	text-align: center;
 }
 
+@media only screen and (min-width: 1100px) {		/* Increase the side padding for title on desktop */
+	.text-post-title {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
 .text-post-date {
 	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
 	font-size: 12px;
-	color: #8092a1;
+	color: rgba(83,93,104,1);
 	padding-top: 7px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -97,9 +117,9 @@ div.text-post-image {
 	margin: 0 auto;
 }
 
-@media (min-width: 600px) {			/* increases the post-header-image height more on desktop */
+@media (min-width: 600px) {			/* increases the post-header-image height on desktop */
 	div.text-post-image {
-		max-height: 300px;
+		max-height: 275px;
 	}
 }
 
@@ -109,7 +129,8 @@ img.text-post-image {
 }
 
 .text-post-text {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
+	font-size: 11px;
 	line-height: 16px;
 	display: block;
 	max-width: 1100px;
@@ -118,9 +139,17 @@ img.text-post-image {
 	padding-right: 20px;
 }
 
-@media (min-width: 600px) {			/* increases the post-header-image height more on desktop */
+@media only screen and (min-width: 600px) {			/* Increase font size on desktop */
 	.text-post-text {
+		font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;;
 		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 1100px) {			/* match text width to image width on wide-screen desktops */
+	.text-post-text {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -152,8 +181,17 @@ img.text-post-image {
 	padding-left: 20px;
 }
 
+blockquote {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left-width: 5px;
+    border-left-color: rgba(83,93,104,1);
+    border-left-style: solid;
+    font-style: italic;
+}
+
 a[rel=tag] {
-	background-color: #edf1f4;
+	background-color: rgba(83,93,104,1);
 	margin-left: 5px;
 	margin-right: 5px;
 	padding-top: 5px;
@@ -176,10 +214,6 @@ a[rel=tag] {
 	padding-top: 45px;
 }
 
-.row {
-
-}
-
 .main-image {
 	max-width: 100%;
 	height: auto;
@@ -195,12 +229,12 @@ a[rel=tag] {
 	letter-spacing: 0.5px;
 	margin: 0 auto;
 	text-align: center;
-	color: #8092a1;
+	color: rgba(239,242,244,1);
 }
 
 .nav-button {
 	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
-	background-color: #edf1f4;
+	background-color: rgba(18,22,33,.85);
 	font-size: 25px;
 	padding-top: 5px;
 	padding-right: 10px;
@@ -215,8 +249,8 @@ a[rel=tag] {
 /* Footer related styling goes here */
 .footer {
 	font-family: "SFUI-light", "SFUI-light", "helvetica neue", Helvetica, sans-serif;
-	background-color: #121621;
-	color: #8092a1;
+	background-color: rgba(18,22,33,.85);
+	color: rgba(83,93,104,1);
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 10px;
@@ -228,17 +262,13 @@ a[rel=tag] {
 
 
 
-
-
-
-
-
-
 /* header */
 
 .header {
-	background-color: #121621;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	background-color: rgba(18,22,33,.85);
+	-webkit-backdrop-filter: blur(5px);
+
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
 	position: fixed;
 	width: 100%;
 	z-index: 99;
@@ -249,13 +279,13 @@ a[rel=tag] {
 	padding: 0;
 	list-style: none;
 	overflow: hidden;
-	background-color: #121621;
 }
 
 .header li a {
 	display: block;
 	padding: 10px 20px;
-	font-size: 14px;
+	font-size: 12px;
+	color: rgba(239,242,244,1);
 }
 
 .header .logo {
@@ -263,7 +293,7 @@ a[rel=tag] {
 	float: left;
 	font-size: 16px;
 	padding: 10px;
-	font-color: #ffffff;
+	color: rgba(239,242,244,1);
 }
 
 /* menu */
@@ -286,7 +316,7 @@ a[rel=tag] {
 }
 
 .header .menu-icon .navicon {
-	background: #2888d5;
+	background: rgba(239,242,244,1);
 	display: block;
 	height: 2px;
 	position: relative;
@@ -296,7 +326,7 @@ a[rel=tag] {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: #2888d5;
+	background: rgba(239,242,244,1);
 	content: '';
 	height: 100%;
 	position: absolute;
@@ -340,7 +370,7 @@ a[rel=tag] {
 }
 
 /* For large screens */
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 	.header .menu-icon {
 		display: none;
 	}
