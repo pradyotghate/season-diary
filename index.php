@@ -35,6 +35,4 @@
 	endif; ?>
 </div>
 
-<div class="footer">
-	<?php get_footer(); ?>
-</div>
+<?php get_footer(); ?>
