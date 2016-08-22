@@ -1,5 +1,5 @@
 <div class="footer">
-	Powered by Wordpress.
+	Powered by <a href="wordpress.org">Wordpress</a>.
 	<?php wp_footer(); ?>
 </div>
 	</body>

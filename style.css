@@ -13,7 +13,7 @@ Text Domain: seasondiary
 darkblue: rgba(18,22,33,1);
 blue: rgba(40,136,213,1);
 greyblue: rgba(83,93,104,1);
-white: rgba(239,242,244,1);
+grey: rgba(239,242,244,1);
 highlightred: rgba(104,7,2,1);
 */
 
@@ -260,7 +260,7 @@ a[rel=tag] {
 
 .nav-button {
 	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
-	background-color: rgba(18,22,33,.85);
+	background-color: rgba(18,22,33,.1);
 	font-size: 25px;
 	padding-top: 5px;
 	padding-right: 10px;
@@ -275,7 +275,7 @@ a[rel=tag] {
 /* Footer related styling goes here */
 .footer {
 	font-family: "SFUI-light", "SFUI-light", "helvetica neue", Helvetica, sans-serif;
-	background-color: rgba(18,22,33,.85);
+	background-color: rgba(83,93,104,.1);
 	color: rgba(83,93,104,1);
 	margin: 0 auto;
 	text-align: center;
