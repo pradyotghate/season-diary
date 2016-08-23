@@ -101,7 +101,7 @@ a:active {
 	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
 	font-size: 12px;
 	color: rgba(83,93,104,1);
-	padding-top: 7px;
+	padding-top: 11px;
 	padding-right: 20px;
 	padding-left: 20px;
 	margin: 0 auto;
@@ -109,7 +109,7 @@ a:active {
 }
 
 div.text-post-image {
-	padding-top: 7px;
+	padding-top: 11px;
 	max-height: 200px;
 	max-width: 1100px;
 	overflow: hidden;
