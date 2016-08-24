@@ -2,6 +2,7 @@
 
 <div class="text-post-list"> 
 	<?php if ( have_posts() ) :
+
 		while ( have_posts() ) :
 			the_post(); ?>
 
@@ -28,11 +29,18 @@
 				else : _e( '<span class="nav-button">&rsaquo;</span>' );
 				endif; ?>
 			</div>
-		<?php endif; ?>
+		<?php endif;
 
-	<?php 
-	else : _e( 'Sorry, no posts matched your criteria.' );
-	endif; ?>
+	else : ?>
+		<div class="text-one-post">
+			<div class="text-post-title"> Nothing found! </div>
+			<div class="text-post-text">
+				<blockquote><p>Not all those who wander are lost.</p></blockquote>
+				<p>But you definitely seem to be lost. Or may be my site missed a turn (forgive me?). But this is definitely not the place to be. Click the link below for a safe passage back. Quick, before the Orcs block the passage.</p>
+			</div>
+			<div class="text-post-date"> <a href="<?php echo home_url(); ?>"> Return to safety </a> </div>
+		</div>
+	<?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
