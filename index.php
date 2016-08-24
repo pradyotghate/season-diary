@@ -9,7 +9,7 @@
 			<div class="text-post-title"> <?php echo "<a href=\""; the_permalink(); echo "\">"; the_title(); ?> </a> </div>
 			<div class="text-post-date"> <?php the_date(); ?> </div>
 				<?php if(has_post_thumbnail()) : ?>
-					<div class="text-post-image" > <img src="<?php the_post_thumbnail_url(); ?>" class="text-post-image"></div>
+					<div class="text-post-image" > <img src="<?php the_post_thumbnail_url(); ?>" class="text-post-image" alt=""></div>
 				<?php endif; ?>
 				<div class="text-post-text"> <?php the_content( '...continue reading' ); ?></div>
 				<div class="text-post-tags"> <?php the_tags( '<div class="tag">', '', '</div>' ); ?></div>

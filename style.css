@@ -10,11 +10,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, white
 Text Domain: seasondiary
 
+Color Scheme - Winter Evening by Fireplace
 darkblue: rgba(18,22,33,1);
 blue: rgba(40,136,213,1);
 greyblue: rgba(83,93,104,1);
-grey: rgba(239,242,244,1);
-highlightred: rgba(104,7,2,1);
+white: rgba(244,244,244,1);
+highlightred: rgba(87,6,2,1);
 */
 
 @font-face {
@@ -75,9 +76,9 @@ a:active {
 	max-width: 1100px;
 	padding-top: 20px;
 	padding-bottom: 15px;
-	border-bottom-color: rgba(83,93,104,.1);
+	/*border-bottom-color: rgba(83,93,104,.1);
 	border-bottom-style: solid;
-	border-bottom-width: 1.5px;
+	border-bottom-width: 1.5px;*/
 	display: block;
 	letter-spacing: 1.15px;
 }
@@ -101,7 +102,7 @@ a:active {
 	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
 	font-size: 12px;
 	color: rgba(83,93,104,1);
-	padding-top: 7px;
+	padding-top: 11px;
 	padding-right: 20px;
 	padding-left: 20px;
 	margin: 0 auto;
@@ -109,7 +110,7 @@ a:active {
 }
 
 div.text-post-image {
-	padding-top: 7px;
+	padding-top: 11px;
 	max-height: 200px;
 	max-width: 1100px;
 	overflow: hidden;
@@ -182,23 +183,6 @@ p {
 	margin-right: auto;
 }
 
-.text-post-tags {
-	padding-top: 5px;
-	font-size: 12px;
-	letter-spacing: 0.5px;
-	margin: 0 auto;
-	text-align: center;
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-@media only screen and (min-width: 1100px) {		/* match tag width to image width on wide-screen desktops */
-	.text-post-tags {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
 blockquote {
 	margin: 0;
     padding-left: 10px;
@@ -209,7 +193,7 @@ blockquote {
     border-left-width: 1.5px;
     border-left-color: rgba(83,93,104,.5);
     border-left-style: solid;
-	background-color: rgba(239,242,244,1);
+	background-color: rgba(244,244,244,1);
 	font-family: "courier", "consolas";
 }
 
@@ -218,15 +202,43 @@ blockquote > p {
 	padding: 0;
 }
 
+.text-post-tags {
+	padding-top: 5px;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	margin: 0 auto;
+	text-align: center;
+	margin-right: 20px;
+	margin-left: 20px;
+
+	border-bottom-color: rgba(83,93,104,.1);
+	border-bottom-style: solid;
+	border-bottom-width: 1.5px;
+}
+
+@media only screen and (min-width: 1100px) {		/* match tag width to image width on wide-screen desktops */
+	.text-post-tags {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+}
+
+.tag {
+	margin-bottom: 11px;
+}
+
 a[rel=tag] {
 	background-color: rgba(83,93,104,.1);
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	padding-top: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 7px;
+	padding-right: 7px;
 	padding-bottom: 5px;
 	border-radius: 3px;
+	display: inline-block;
 }
 
 
@@ -255,7 +267,7 @@ a[rel=tag] {
 	letter-spacing: 0.5px;
 	margin: 0 auto;
 	text-align: center;
-	color: rgba(239,242,244,1);
+	color: rgba(244,244,244,1);
 }
 
 .nav-button {
@@ -300,6 +312,14 @@ a[rel=tag] {
 	z-index: 99;
 }
 
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 18px;
+	padding: 7px 10px;
+	color: rgba(244,244,244,1);
+}
+
 .header ul {
 	margin: 0;
 	padding: 0;
@@ -307,19 +327,35 @@ a[rel=tag] {
 	overflow: hidden;
 }
 
-.header li a {
+.header li {
 	display: block;
-	padding: 10px 20px;
-	font-size: 12px;
-	color: rgba(239,242,244,1);
+	font-size: 14px;
+	padding: 5px 25px 5px 20px;
 }
 
-.header .logo {
-	display: block;
-	float: left;
-	font-size: 16px;
-	padding: 10px;
-	color: rgba(239,242,244,1);
+.header li.cat-item,
+.header li.page_item {
+	padding: 10px 20px;
+}
+
+.header li a {
+	color: rgba(244,244,244,1);
+	text-decoration: none;
+}
+
+input.search-field {
+	background-color: rgba(244,244,244,.75);
+	border-style: none;
+	border-radius: 2px;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 4px;
+    transition: background-color .5s ease;
+}
+
+input.search-field:focus {
+	background-color: rgba(244,244,244,1);
 }
 
 /* menu */
@@ -342,7 +378,7 @@ a[rel=tag] {
 }
 
 .header .menu-icon .navicon {
-	background: rgba(239,242,244,1);
+	background: rgba(244,244,244,1);
 	display: block;
 	height: 2px;
 	position: relative;
@@ -352,7 +388,7 @@ a[rel=tag] {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: rgba(239,242,244,1);
+	background: rgba(244,244,244,1);
 	content: '';
 	height: 100%;
 	position: absolute;

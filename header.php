@@ -37,6 +37,9 @@
 					'order_by' => 'name',
 					'order' => 'ASC'
 					));
+				echo '<li>';
+					get_search_form();
+				echo '</li>';
 				?>
 			</ul>
 		</div>
