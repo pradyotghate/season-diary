@@ -327,7 +327,7 @@ a[rel=tag] {
 
 .header li {
 	display: block;
-	font-size: 14px;
+	font-size: 16px;
 	padding: 5px 25px 5px 20px;
 	margin-bottom: 10px;
 }
@@ -349,9 +349,9 @@ input.search-field {
 	border-radius: 2px;
     outline: none;
     width: 100%;
-    font-size: 14px;
-    padding: 4px;
-    transition: background-color .5s ease;
+    font-size: 16px;
+    padding: 6px;
+    transition: background-color 300ms ease;
     color: rgba(244,244,244,1);
     min-width: 55px;
 }
