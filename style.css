@@ -58,7 +58,8 @@ body {
 
 a:link,
 a:visited,
-a:active {
+a:active,
+a:link:hover {
 	color: rgba(40,136,213,1);
 	text-decoration: none;
 }
