@@ -70,10 +70,6 @@ a:link:hover {
 	}
 }
 
-.icon {
-	font-family: "FontAwesome";
-}
-
 
 /* Text content related styling goes here */
 .text-post-list {
@@ -109,7 +105,7 @@ a:link:hover {
 
 .text-post-date {
 	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 	color: rgba(83,93,104,1);
 	padding-top: 11px;
 	padding-right: 20px;
@@ -139,7 +135,7 @@ img.text-post-image {
 
 .text-post-text {
 	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 16px;
 	display: block;
 	max-width: 1100px;
@@ -151,7 +147,7 @@ img.text-post-image {
 @media only screen and (min-width: 600px) {				/* Increase post body font size on desktop */
 	.text-post-text {
 		font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;;
-		font-size: 12px;
+		font-size: 13px;
 	}
 }
 
@@ -165,6 +161,10 @@ img.text-post-image {
 p {
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+strong {
+	font-family: "SFUI-semibold";
 }
 
 @media only screen and (min-width: 1100px) {
@@ -466,7 +466,7 @@ input.search-field:focus {
 }
 
 /* For large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 720px) {
 	.header .menu-icon {
 		display: none;
 	}
