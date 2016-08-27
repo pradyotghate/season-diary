@@ -251,6 +251,9 @@ a[rel=tag] {
 	display: inline-block;
 }
 
+.icon {
+	font-family: "FontAwesome", "SFUI";
+}
 
 /* Image posts related styling goes here */
 .image-post-list {
