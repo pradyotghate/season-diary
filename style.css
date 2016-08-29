@@ -189,7 +189,7 @@ strong {
 	margin-right: auto;
 }
 
-code {
+blockquote {
 	margin: 0;
 	margin-top: 11px;
     padding-left: 10px;
@@ -198,8 +198,19 @@ code {
     padding-top: 10px;
     padding-bottom: 10px;
     border-left-width: 1.5px;
-    border-left-color: rgba(83,93,104,.5);
+    border-left-color: rrgba(87,6,2,.5);
     border-left-style: solid;
+	background-color: rgba(87,6,2,.75);
+	font-family: "Roboto-light", "consolas";
+	font-size: 12px;
+}
+
+blockquote > p {
+	margin: 0;
+	padding: 0;
+}
+
+code {
 	background-color: rgba(244,244,244,.75);
 	font-family: "Robotomono-light", "consolas";
 	font-size: 12px;
