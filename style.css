@@ -19,30 +19,32 @@ highlight-red: rgba(87,6,2,1);
 */
 
 @font-face {
-	font-family: SFUI;
-	src: url('font/SF-UI-Text-Regular.otf')
-		format('opentype');
+	font-family: Roboto;
+	src: url('font/Roboto-Regular.ttf') format('truetype');
 	font-weight: noraml;
 }
 
 @font-face {
-	font-family: SFUI-light;
-	src: url('font/SF-UI-Text-Light.otf')
-		format('opentype');
+	font-family: Roboto-light;
+	src: url('font/Roboto-Light.ttf') format('truetype');
 	font-weight: noraml;
 }
 
 @font-face {
-	font-family: SFUI-semibold;
-	src: url('font/SF-UI-Text-Semibold.otf')
-		format('opentype');
+	font-family: Robotomono-light;
+	src: url('font/RobotoMono-Light.ttf') format('truetype');
+	font-weight: noraml;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url('font/Lato-Regular.ttf') format('truetype');
 	font-weight: noraml;
 }
 
 @font-face {
 	font-family: FontAwesome;
-	src: url('font/FontAwesome.otf')
-		format('opentype');
+	src: url('font/FontAwesome.otf') format('opentype');
 	font-weight: noraml;
 }
 
@@ -51,7 +53,7 @@ html {
 }
 
 body {
-	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
+	font-family: "Roboto", "helvetica neue", Helvetica, sans-serif;
 	margin: 0;
 	color: rgba(18,22,33,1);
 }
@@ -73,7 +75,7 @@ a:link:hover {
 
 /* Text content related styling goes here */
 .text-post-list {
-	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
+	font-family: "Roboto", "helvetica neue", Helvetica, sans-serif;
 	width: 100%;
 	font-size: 12px;
 	padding-top: 39px;
@@ -89,6 +91,7 @@ a:link:hover {
 }
 
 .text-post-title {
+	font-family: "Lato", Helvetica, sans-serif;
 	font-size: 18px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -104,7 +107,7 @@ a:link:hover {
 }
 
 .text-post-date {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "Roboto-light", "helvetica neue", Helvetica, sans-serif;
 	font-size: 11px;
 	color: rgba(83,93,104,1);
 	padding-top: 11px;
@@ -134,9 +137,9 @@ img.text-post-image {
 }
 
 .text-post-text {
-	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
-	font-size: 12px;
-	line-height: 16px;
+	font-family: "Roboto-light", "helvetica neue", Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
 	display: block;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -144,17 +147,11 @@ img.text-post-image {
 	padding-right: 10px;
 }
 
-@media only screen and (min-width: 600px) {				/* Increase post body font size on desktop */
-	.text-post-text {
-		font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;;
-		font-size: 13px;
-	}
-}
-
 @media only screen and (min-width: 1100px) {			/* match text width to image width on wide-screen desktops */
 	.text-post-text {
 		padding-left: 0;
 		padding-right: 0;
+		line-height: 20px;
 	}
 }
 
@@ -164,7 +161,7 @@ p {
 }
 
 strong {
-	font-family: "SFUI-semibold";
+	font-family: "Roboto";
 }
 
 @media only screen and (min-width: 1100px) {
@@ -203,8 +200,9 @@ blockquote {
     border-left-width: 1.5px;
     border-left-color: rgba(83,93,104,.5);
     border-left-style: solid;
-	background-color: rgba(244,244,244,1);
-	font-family: "courier", "consolas";
+	background-color: rgba(244,244,244,.75);
+	font-family: "Robotomono-light", "consolas";
+	font-size: 12px;
 }
 
 blockquote > p {
@@ -214,7 +212,7 @@ blockquote > p {
 
 .text-post-tags {
 	padding-top: 5px;
-	font-size: 12px;
+	font-size: 11px;
 	letter-spacing: 0.5px;
 	margin: 0 auto;
 	text-align: center;
@@ -249,10 +247,11 @@ a[rel=tag] {
 	padding-bottom: 5px;
 	border-radius: 3px;
 	display: inline-block;
+	font-family: 'Roboto-light';
 }
 
 .icon {
-	font-family: "FontAwesome", "SFUI";
+	font-family: "FontAwesome", "Roboto";
 }
 
 /* Image posts related styling goes here */
@@ -284,7 +283,7 @@ a[rel=tag] {
 }
 
 .nav-button {
-	font-family: "SFUI", "helvetica neue", Helvetica, sans-serif;
+	font-family: "Roboto", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(18,22,33,.1);
 	font-size: 25px;
 	padding-top: 5px;
@@ -299,7 +298,7 @@ a[rel=tag] {
 
 /* Footer related styling goes here */
 .footer {
-	font-family: "SFUI-light", "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "Roboto-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(83,93,104,.1);
 	color: rgba(83,93,104,1);
 	margin: 0 auto;
@@ -316,6 +315,7 @@ a[rel=tag] {
 /* header */
 
 .header {
+	font-family: "Roboto-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(18,22,33,.85);
 	-webkit-backdrop-filter: blur(5px);
 
@@ -359,6 +359,7 @@ a[rel=tag] {
 }
 
 input.search-field {
+	font-family: "Roboto-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(244,244,244,.5);
 	border-style: none;
 	border-radius: 2px;
@@ -479,6 +480,7 @@ input.search-field:focus {
 		max-height: none;
 	}
 	.header li {
+		font-family: "Roboto-light", "helvetica neue", Helvetica, sans-serif;
     	float: left;
 		margin-bottom: 0;
 		padding: 5px 25px 5px 20px;
