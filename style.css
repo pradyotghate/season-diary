@@ -19,14 +19,20 @@ highlight-red: rgba(87,6,2,1);
 */
 
 @font-face {
-	font-family: SFUI;
+	font-family: SFDisplay-regular;
 	src: url('font/SanFranciscoDisplay-Regular.otf') format('opentype');
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: SFUI-light;
+	font-family: SFDisplay-light;
 	src: url('font/SanFranciscoDisplay-Light.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: SFDisplay-ultralight;
+	src: url('font/SanFranciscoDisplay-Ultralight.otf') format('opentype');
 	font-weight: normal;
 }
 
@@ -47,7 +53,7 @@ html {
 }
 
 body {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	margin: 0;
 	color: rgba(18,22,33,1);
 }
@@ -69,7 +75,7 @@ a:link:hover {
 
 /* Text content related styling goes here */
 .text-post-list {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	width: 100%;
 	font-size: 12px;
 	padding-top: 39px;
@@ -85,7 +91,7 @@ a:link:hover {
 }
 
 .text-post-title {
-	font-family: "SFUI", Helvetica, sans-serif;
+	font-family: "SFDisplay-regular", Helvetica, sans-serif;
 	font-size: 18px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -101,7 +107,7 @@ a:link:hover {
 }
 
 .text-post-date {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	font-size: 11px;
 	color: rgba(83,93,104,1);
 	padding-top: 11px;
@@ -119,9 +125,11 @@ div.text-post-image {
 	margin: 0 auto;
 }
 
-@media (min-width: 600px) {			/* increases the post-header-image height on desktop */
+@media only screen and (min-width: 1100px) {			/* increases the post-header-image height on desktop */
 	div.text-post-image {
 		max-height: 275px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
@@ -131,7 +139,7 @@ img.text-post-image {
 }
 
 .text-post-text {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	display: block;
@@ -143,8 +151,6 @@ img.text-post-image {
 
 @media only screen and (min-width: 1100px) {			/* match text width to image width on wide-screen desktops */
 	.text-post-text {
-		padding-left: 0;
-		padding-right: 0;
 		line-height: 20px;
 	}
 }
@@ -155,14 +161,7 @@ p {
 }
 
 strong {
-	font-family: "SFUI";
-}
-
-@media only screen and (min-width: 1100px) {
-	p {
-		padding-left: 0;
-		padding-right: 0;
-	}
+	font-family: "SFDisplay-regular";
 }
 
 .alignleft {
@@ -186,16 +185,16 @@ strong {
 blockquote {
 	margin: 0;
 	margin-top: 11px;
-    padding-left: 10px;
-    padding-right: 10px;
     margin-right: 10px;
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
-    border-left-width: 1.5px;
+    border-left-width: 1px;
     border-left-color: rgba(87,6,2,.5);
     border-left-style: solid;
-	background-color: rgba(87,6,2,.75);
-	font-family: "SFUI-light";
+	background-color: rgba(87,6,2,.1);
+	font-family: "SFDisplay-light";
 	font-size: 12px;
 }
 
@@ -258,11 +257,11 @@ a[rel=tag] {
 	padding-bottom: 5px;
 	border-radius: 3px;
 	display: inline-block;
-	font-family: 'SFUI-light';
+	font-family: 'SFDisplay-light';
 }
 
 .icon {
-	font-family: "FontAwesome", "SFUI";
+	font-family: "FontAwesome", "SFDisplay-regular";
 }
 
 /* Image posts related styling goes here */
@@ -294,7 +293,7 @@ a[rel=tag] {
 }
 
 .nav-button {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(18,22,33,.1);
 	font-size: 25px;
 	padding-top: 5px;
@@ -309,7 +308,7 @@ a[rel=tag] {
 
 /* Footer related styling goes here */
 .footer {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(83,93,104,.1);
 	color: rgba(83,93,104,1);
 	margin: 0 auto;
@@ -326,7 +325,7 @@ a[rel=tag] {
 /* header */
 
 .header {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(18,22,33,.85);
 	-webkit-backdrop-filter: blur(5px);
 
@@ -377,7 +376,7 @@ a[rel=tag] {
 }
 
 input.search-field {
-	font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(244,244,244,.5);
 	border-style: none;
 	border-radius: 2px;
@@ -391,7 +390,7 @@ input.search-field {
     min-width: 55px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 720px) {
 	input.search-field {
 		width: 150px;
 	}
@@ -504,7 +503,7 @@ input.search-field:focus {
 		max-height: none;
 	}
 	.header li {
-		font-family: "SFUI-light", "helvetica neue", Helvetica, sans-serif;
+		font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
     	float: left;
 		margin-bottom: 0;
 		padding: 5px 25px 5px 20px;
