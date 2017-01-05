@@ -72,6 +72,10 @@ a:link:hover {
 	}
 }
 
+pre {
+	margin: 0;
+}
+
 
 /* Text content related styling goes here */
 .text-post-list {
