@@ -11,9 +11,10 @@ Tags: black, white
 Text Domain: seasondiary
 
 Color Scheme - Winter Evening by Fireplace
-darkblue: rgba(18,22,33,1);
+darkblue: rgba(3,12,38,1);
 blue: rgba(40,136,213,1);
-greyblue: rgba(83,93,104,1);
+greyblue: rgba(72,86,104,1);
+lightgrey: rgba(148,162,173,.1);
 white: rgba(244,244,244,1);
 highlight-red: rgba(87,6,2,1);
 */
@@ -55,7 +56,7 @@ html {
 body {
 	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	margin: 0;
-	color: rgba(18,22,33,1);
+	color: rgba(3,12,38,1);
 }
 
 a:link,
@@ -66,7 +67,7 @@ a:link:hover {
 	text-decoration: none;
 }
 
-@media only screen and (min-width: 1100px) {						/* Link hovering for desktops */
+@media only screen and (min-width: 1400px) {						/* Link hovering for desktops */
 	a:link:hover {
 		text-decoration: underline;
 	}
@@ -81,59 +82,59 @@ pre {
 .text-post-list {
 	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	width: 100%;
-	font-size: 12px;
-	padding-top: 39px;
+	font-size: 12pt;
+	padding-top: 39pt;
 }
 
 .text-one-post {
 	margin: 0 auto;
-	max-width: 1100px;
-	padding-top: 20px;
-	padding-bottom: 15px;
+	max-width: 1100pt;
+	padding-top: 20pt;
+	padding-bottom: 15pt;
 	display: block;
-	letter-spacing: 1.15px;
+	letter-spacing: 1.15pt;
 }
 
 .text-post-title {
 	font-family: "SFDisplay-regular", Helvetica, sans-serif;
-	font-size: 18px;
-	padding-right: 20px;
-	padding-left: 20px;
+	font-size: 20pt;
+	padding-right: 20pt;
+	padding-left: 20pt;
 	margin: 0 auto;
 	text-align: center;
 }
 
-@media only screen and (min-width: 1100px) {		/* Increase the side padding for title on desktop */
+@media only screen and (min-width: 1400px) {		/* Increase the side padding for title on desktop */
 	.text-post-title {
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: 40pt;
+		padding-right: 40pt;
 	}
 }
 
 .text-post-date {
 	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
-	font-size: 11px;
-	color: rgba(83,93,104,1);
-	padding-top: 11px;
-	padding-right: 20px;
-	padding-left: 20px;
+	font-size: 10pt;
+	color: rgba(72,86,104,1);
+	padding-top: 12pt;
+	padding-right: 20pt;
+	padding-left: 20pt;
 	margin: 0 auto;
 	text-align: center;
 }
 
 div.text-post-image {
-	padding-top: 11px;
-	max-height: 200px;
-	max-width: 1100px;
+	padding-top: 11pt;
+	max-height: 200pt;
+	max-width: 1100pt;
 	overflow: hidden;
 	margin: 0 auto;
 }
 
 @media only screen and (min-width: 1100px) {			/* increases the post-header-image height on desktop */
 	div.text-post-image {
-		max-height: 275px;
-		padding-left: 20px;
-		padding-right: 20px;
+		max-height: 275pt;
+		padding-left: 20pt;
+		padding-right: 20pt;
 	}
 }
 
@@ -144,24 +145,24 @@ img.text-post-image {
 
 .text-post-text {
 	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
+	font-size: 12pt;
+	line-height: 18pt;
 	display: block;
-	max-width: 1100px;
+	max-width: 1100pt;
 	margin: 0 auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 10pt;
+	padding-right: 10pt;
 }
 
 @media only screen and (min-width: 1100px) {			/* match text width to image width on wide-screen desktops */
 	.text-post-text {
-		line-height: 20px;
+		line-height: 20pt;
 	}
 }
 
 p {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 10pt;
+	padding-right: 10pt;
 }
 
 strong {
@@ -171,13 +172,13 @@ strong {
 .alignleft {
 	display: inline;
 	float: left;
-	padding-right: 10px;
+	padding-right: 10pt;
 }
 
 .alignright {
 	display: inline;
 	float: right;
-	padding-left: 10px;
+	padding-left: 10pt;
 }
 
 .aligncenter {
@@ -187,19 +188,16 @@ strong {
 }
 
 blockquote {
-	margin: 0;
-	margin-top: 11px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    border-left-width: 1px;
+	margin: 10pt;
+    padding: 16pt;
+    border-left-width: 1pt;
     border-left-color: rgba(87,6,2,.5);
     border-left-style: solid;
-	background-color: rgba(87,6,2,.1);
-	font-family: "SFDisplay-light";
-	font-size: 12px;
+	/*background-color: rgba(87,6,2,.1);*/
+	/*font-family: "Robotomono-light", "consolas";*/
+	font-size: 16pt;
+	display: block;
+	color: rgba(87,6,2,1);
 }
 
 blockquote > p {
@@ -207,59 +205,42 @@ blockquote > p {
 	padding: 0;
 }
 
-code {
-	display: block;
-	margin: 0;
-	margin-top: 11px;
-    padding-left: 20px;
-    padding-right: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-left-width: 1.5px;
-    border-left-color: rgba(244,244,244,.5);
-    border-left-style: solid;
-	background-color: rgba(244,244,244,1);
-	font-family: "Robotomono-light", "consolas";
-	font-size: 12px;
-}
-
 .text-post-tags {
-	padding-top: 5px;
-	font-size: 11px;
-	letter-spacing: 0.5px;
+	padding-top: 5pt;
+	font-size: 8pt;
+	letter-spacing: 0.5pt;
 	margin: 0 auto;
 	text-align: center;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right: 20pt;
+	margin-left: 20pt;
 
-	border-bottom-color: rgba(83,93,104,.1);
+	border-bottom-color: rgba(148,162,173,.1);
 	border-bottom-style: solid;
-	border-bottom-width: 1.5px;
+	border-bottom-width: 1.5pt;
 }
 
 @media only screen and (min-width: 1100px) {		/* match tag width to image width on wide-screen desktops */
 	.text-post-tags {
-		margin-right: 0px;
-		margin-left: 0px;
+		margin-right: 0pt;
+		margin-left: 0pt;
 	}
 }
 
 .tag {
-	margin-bottom: 11px;
+	margin-bottom: 12pt;
 }
 
 a[rel=tag] {
-	background-color: rgba(83,93,104,.1);
-	margin-left: 3px;
-	margin-right: 3px;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	padding-top: 5px;
-	padding-left: 7px;
-	padding-right: 7px;
-	padding-bottom: 5px;
-	border-radius: 3px;
+	background-color: rgba(148,162,173,.1);
+	margin-left: 4pt;
+	margin-right: 4pt;
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+	padding-top: 4pt;
+	padding-left: 8pt;
+	padding-right: 8pt;
+	padding-bottom: 4pt;
+	border-radius: 2pt;
 	display: inline-block;
 	font-family: 'SFDisplay-light';
 }
@@ -270,27 +251,27 @@ a[rel=tag] {
 
 /* Image posts related styling goes here */
 .image-post-list {
-	padding-left: 10px;
-	padding-right: 10px;
-	max-width: 900px;
-	font-size: 12px;
+	padding-left: 10pt;
+	padding-right: 10pt;
+	max-width: 900pt;
+	font-size: 12pt;
 	margin: auto;
-	padding-top: 45px;
+	padding-top: 45pt;
 }
 
 .main-image {
 	max-width: 100%;
 	height: auto;
-	border-radius: 3px;
+	border-radius: 3pt;
 	display: inline-block;
 }
 
 
 /* Post navigation related styling goes here */
 .post-list-nav {
-	padding-top: 10px;
-	font-size: 10px;
-	letter-spacing: 0.5px;
+	padding-top: 10pt;
+	font-size: 10pt;
+	letter-spacing: 0.5pt;
 	margin: 0 auto;
 	text-align: center;
 	color: rgba(244,244,244,1);
@@ -299,29 +280,29 @@ a[rel=tag] {
 .nav-button {
 	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(18,22,33,.1);
-	font-size: 25px;
-	padding-top: 5px;
-	padding-right: 10px;
-	padding-bottom: 5px;
-	padding-left: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
-	border-radius: 3px;
+	font-size: 25pt;
+	padding-top: 5pt;
+	padding-right: 10pt;
+	padding-bottom: 5pt;
+	padding-left: 10pt;
+	margin-left: 2pt;
+	margin-right: 2pt;
+	border-radius: 3pt;
 }
 
 
 /* Footer related styling goes here */
 .footer {
 	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
-	background-color: rgba(83,93,104,.1);
-	color: rgba(83,93,104,1);
+	background-color: rgba(148,162,173,.1);
+	color: rgba(72,86,104,1);
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 10px;
-	padding-top: 5px;
-	padding-left: 10px;
-	padding-bottom: 5px;
-	font-size: 10px;
+	margin-top: 10pt;
+	padding-top: 5pt;
+	padding-left: 10pt;
+	padding-bottom: 5pt;
+	font-size: 10pt;
 }
 
 
@@ -342,8 +323,8 @@ a[rel=tag] {
 .header .logo {
 	display: block;
 	float: left;
-	font-size: 22px;
-	padding: 7px 10px;
+	font-size: 22pt;
+	padding: 7px 10pt;
 	color: rgba(244,244,244,1);
 }
 
@@ -356,21 +337,21 @@ a[rel=tag] {
 
 .header li {
 	display: block;
-	font-size: 16px;
-	padding: 5px 25px 5px 14px;
-	margin-bottom: 10px;
-	margin-right: 10px;
+	font-size: 16pt;
+	padding: 5px 25px 5px 14pt;
+	margin-bottom: 10pt;
+	margin-right: 10pt;
 }
 
 @media only screen and (min-width: 700px) {
 	.header li {
-		margin-right: 0px;
+		margin-right: 0pt;
 	}
 }
 
 .header li.cat-item,
 .header li.page_item {
-	padding: 10px 20px;
+	padding: 10px 20pt;
 	margin: 0;
 }
 
@@ -383,20 +364,20 @@ input.search-field {
 	font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
 	background-color: rgba(244,244,244,.5);
 	border-style: none;
-	border-radius: 2px;
+	border-radius: 2pt;
     outline: none;
     width: 100%;
-    font-size: 16px;
-    padding: 6px 10px 4px 10px;
+    font-size: 16pt;
+    padding: 6px 10px 4px 10pt;
     transition: background-color 300ms ease-out;
     -webkit-transition: background-color 300ms ease-out;
     color: rgba(244,244,244,1);
-    min-width: 55px;
+    min-width: 55pt;
 }
 
 @media only screen and (min-width: 720px) {
 	input.search-field {
-		width: 150px;
+		width: 150pt;
 	}
 }
 
@@ -417,7 +398,7 @@ input.search-field {
 
 input.search-field:focus {
 	background-color: rgba(244,244,244,1);
-	color: rgba(18,22,33,1);;
+	color: rgba(3,12,38,1);;
 }
 
 /* menu */
@@ -435,7 +416,7 @@ input.search-field:focus {
 	cursor: pointer;
 	display: inline-block;
 	float: right;
-	padding: 16px 10px;
+	padding: 16px 10pt;
 	position: relative;
 	user-select: none;
 }
@@ -443,11 +424,11 @@ input.search-field:focus {
 .header .menu-icon .navicon {
 	background: rgba(244,244,244,1);
 	display: block;
-	height: 2px;
+	height: 2pt;
 	position: relative;
 	transition: background 300ms ease-out;
 	-webkit-transition: background 300ms ease-out;
-	width: 18px;
+	width: 18pt;
 }
 
 .header .menu-icon .navicon:before,
@@ -462,11 +443,11 @@ input.search-field:focus {
 }
 
 .header .menu-icon .navicon:before {
-	top: 5px;
+	top: 5pt;
 }
 
 .header .menu-icon .navicon:after {
-	top: -5px;
+	top: -5pt;
 }
 
 /* menu btn */
@@ -476,7 +457,7 @@ input.search-field:focus {
 }
 
 .header .menu-btn:checked ~ .menu {
-	max-height: 240px;
+	max-height: 240pt;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -510,7 +491,7 @@ input.search-field:focus {
 		font-family: "SFDisplay-light", "helvetica neue", Helvetica, sans-serif;
     	float: left;
 		margin-bottom: 0;
-		padding: 5px 25px 5px 20px;
+		padding: 5px 25px 5px 20pt;
 	}
 
 }
